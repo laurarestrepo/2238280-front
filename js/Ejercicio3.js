@@ -4,11 +4,14 @@ var n2 = 5;
 function randomTen() {
 
     const MAX = 10, MIN = 1;
-    var result;
-    let aleatorio = Math.floor((Math.random() * (MAX - MIN + 1)) + MIN);
+   
+    var aleatorio = Math.floor((Math.random() * (MAX - MIN + 1)) + MIN);
     console.log(aleatorio);
-    let mensaje;
+    
+    var result;
+
     if (aleatorio < 5) {
+        
         result = n1 - n2;
 
     } else {
@@ -16,7 +19,8 @@ function randomTen() {
         result = n1 * n2;
     }
 
-    mensaje = `El resultado la operación es: ${result}`;
+    var mensaje = `El resultado la operación es: ${result}`;
+
     console.log(mensaje);
 
     document.getElementById("ouputExerciseThree").innerHTML = mensaje;

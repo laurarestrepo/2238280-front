@@ -3,8 +3,8 @@ var n2 = 5;
 
 function substraction() {
 
-   let result = n1 - n2;
-   let mensaje = `El resultado de la resta es: ${result}`;
+   var result = n1 - n2;
+   var mensaje = `El resultado de la resta es: ${result}`;
    console.log(mensaje);
    document.getElementById("ouputExerciseOne").innerHTML = mensaje;
 }
